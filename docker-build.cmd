@@ -1,0 +1,1 @@
+docker build -t revenue-predictor:1.0 .

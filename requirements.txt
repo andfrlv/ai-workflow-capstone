@@ -1,0 +1,8 @@
+numpy
+flask
+pandas
+scikit-learn
+pytest
+werkzeug
+joblib
+gunicorn

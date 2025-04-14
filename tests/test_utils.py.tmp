@@ -1,0 +1,8 @@
+import utils
+
+
+def test_logging_warning(caplog):
+    with caplog.at_level("WARNING"):
+        utils.do_work()
+        assert "Something might go wrong" in caplog.text
+    print('hi')

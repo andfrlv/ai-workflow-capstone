@@ -1,0 +1,5 @@
+year,month,country,revenue,times_viewed,date
+2020,1,TestCountry,100.0,10.0,2020-01-01
+2020,2,TestCountry,200.0,20.0,2020-02-01
+2020,1,OtherCountry,150.0,15.0,2020-01-01
+2020,2,OtherCountry,250.0,25.0,2020-02-01

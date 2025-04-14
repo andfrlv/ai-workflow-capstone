@@ -1,6 +1,66 @@
 # IBM AI Enterprise Workflow Capstone
 Files for the IBM AI Enterprise Workflow Capstone project. 
 
+## Evaluation Questions
+
+### Are there unit tests for the API?
+Yes. `tests/test_api.py`
+
+### Are there unit tests for the model?
+
+Yes. `tests/test_model.py`
+### Are there unit tests for the logging?
+Yes. `tests/test_logging.py`
+
+### Can all of the unit tests be run with a single script and do all of the unit tests pass?
+Yes. `python tests/run_tests.py`
+
+![docs/images/tests-log.png](docs/images/tests-log.png)
+
+### Is there a mechanism to monitor performance?
+Yes. 
+```sh
+curl http://localhost:5000/metrics
+```
+
+### Was there an attempt to isolate the read/write unit tests from production models and logs?
+
+Yes. all tests are located in `tests` folder and unit test use temp log, that do not interfere with production logs (see for example `test/test_api.py`)
+
+### Does the API work as expected? For example, can you get predictions for a specific country as well as for all countries combined?
+
+Yes.
+
+Predict for 'United Kingdom'
+![docs/images/predict-gb.png](docs/images/predict-gb.png)
+
+Predict for all countries:
+![docs/images/predict-all.png](docs/images/predict-all.png)
+### Does the data ingestion exists as a function or script to facilitate automation?
+
+Yes.  `app/ingest.py`
+
+### Were multiple models compared?
+
+Yes. See `Model comparison` in `part2.ipynb`.
+### Did the EDA investigation use visualizations?
+
+Yes. See `EDA` in `part1.ipynb`.
+
+![docs/images/eda-1.png](docs/images/eda-1.png)
+
+![docs/images/eda-2.png](docs/images/eda-2.png)
+### Is everything containerized within a working Docker image?
+
+Yes. See
+- `dockerfile`
+- `docker-build.cmd`
+- `docker-run.cmd`
+
+### Did they use a visualization to compare their model to the baseline model?
+Yes. See `Evaluation` in `part2.ipynb`:
+![docs/images/model-eval.png](docs/images/model-eval.png)
+
 
 ## Part 1
 
