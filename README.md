@@ -32,9 +32,11 @@ Yes. all tests are located in `tests` folder and unit test use temp log, that do
 Yes.
 
 Predict for 'United Kingdom'
+
 ![docs/images/predict-gb.png](docs/images/predict-gb.png)
 
 Predict for all countries:
+
 ![docs/images/predict-all.png](docs/images/predict-all.png)
 ### Does the data ingestion exists as a function or script to facilitate automation?
 
